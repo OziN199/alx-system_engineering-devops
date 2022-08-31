@@ -1,2 +1,2 @@
-#!/bin/bash
-pwd ls-a 4-listmorefiles
+#!/bin/bash/
+pwd ls -a
