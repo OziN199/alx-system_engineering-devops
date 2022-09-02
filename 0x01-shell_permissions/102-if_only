@@ -1,2 +1,2 @@
 #!/bin/bash
-find / -user betty chown guillaume  hello
+sudo chown --from=guillaume -Rc betty /hello/
