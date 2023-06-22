@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Bash script to gracefully reload Gunicorn
+
 # Check if Gunicorn process is running
 if pgrep gunicorn >/dev/null 2>&1; then
     # Get the process ID (PID) of Gunicorn
