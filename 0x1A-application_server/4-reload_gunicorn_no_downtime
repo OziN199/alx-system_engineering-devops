@@ -4,6 +4,9 @@
 gunicorn_pid=$(pgrep gunicorn)
 
 if [ -n "$gunicorn_pid" ]; then
+    # Limit the PID to 2 characters
+    gunicorn_pid="${gunicorn_pid:0:2}"
+
     # Send the HUP signal to gracefully reload Gunicorn
     kill -HUP "$gunicorn_pid"
     echo "Gunicorn reloaded gracefully."
